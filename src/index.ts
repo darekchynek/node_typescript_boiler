@@ -1,17 +1,6 @@
-import app from './routes.class'
-import * as mongoose from 'mongoose';
+import app from "./app";
+const PORT = 3000;
 
-mongoose.connect('mongodb://localhost/db', { useNewUrlParser: true })
-  .then(() => console.log('Connect to MongoDB...'))
-  .catch((err) => console.log('Error: ', err.message));
-
-const port = process.env.PORT || 3000;
-
-
-
-app.listen(port, (err) => {
-  if (err) {
-    console.log(err)
-  }
-  console.log(`server is listening on ${port}...`);
+app.listen(PORT, () => {
+  console.log("Server listening on port " + PORT);
 });
