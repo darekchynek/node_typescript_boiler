@@ -10,5 +10,3 @@ In next terminal run:
 
 ## Server is running on https://localhost:3000
 
-To call api, You need to be logged on `wwwtest.myatos.net/ncf/web`
-
